@@ -1,0 +1,17 @@
+[book]
+title = "软考高级 · 系统架构设计师"
+description = "系统架构设计师备考笔记 — 基于 2026 新考纲"
+authors = ["zhatongning"]
+language = "zh"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "light"
+git-repository-url = "https://github.com/zhatongning/soft-skills-certification"
+edit-url-template = "https://github.com/zhatongning/soft-skills-certification/edit/main/{path}"
+
+[output.html.search]
+limit-results = 30
+use-boolean-and = true
