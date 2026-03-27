@@ -10,7 +10,6 @@ create-missing = false
 
 [output.html]
 default-theme = "light"
-site-url = "/soft-skills-certification/"
 git-repository-url = "https://github.com/zhatongning/soft-skills-certification"
 edit-url-template = "https://github.com/zhatongning/soft-skills-certification/edit/main/{path}"
 

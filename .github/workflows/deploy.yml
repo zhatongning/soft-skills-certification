@@ -27,11 +27,7 @@ jobs:
           mdbook-version: '0.4.40'
 
       - name: Build
-        run: |
-          mdbook build
-          # mdBook doesn't generate index.html when site-url is set.
-          # Create a redirect page as index.html.
-          cp book/404.html book/index.html
+        run: mdbook build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
