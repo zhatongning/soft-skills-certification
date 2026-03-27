@@ -27,7 +27,14 @@ jobs:
           mdbook-version: '0.4.40'
 
       - name: Build
-        run: mdbook build
+        run: |
+          mdbook build
+          echo "=== Checking build output ==="
+          ls -la book/ | head -20
+          echo "=== Checking index.html ==="
+          ls -la book/index.html 2>&1 || echo "NO index.html found!"
+          echo "=== Checking 404.html ==="
+          ls -la book/404.html 2>&1 || echo "NO 404.html found!"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
